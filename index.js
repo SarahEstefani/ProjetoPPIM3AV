@@ -86,8 +86,7 @@ app.get('/', (requisicao, resposta) => {
         </html>
     `);
 })
-app.get('/cadastrarUsuario', processarCadastroUsuario);
+app.post('/cadastrarUsuario', processarCadastroUsuario);
 
 app.listen(porta, host, () => {
-    console.log(`Servidor executando na url http://${host}:${porta}`);
-});
+    console.log(`Servidor executando na url http://${host}:${porta}`);}
